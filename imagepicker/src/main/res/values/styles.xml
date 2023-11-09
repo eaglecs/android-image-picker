@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="ef_BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="windowActionModeOverlay">true</item>
@@ -15,6 +15,14 @@
     <style name="ef_CustomToolbarTheme" parent="Base.ThemeOverlay.AppCompat.ActionBar">
         <item name="android:textColorPrimary">@color/ef_colorTextPrimary</item>
         <item name="actionMenuTextColor">@color/ef_colorTextPrimary</item>
+<!--        <item name="titleTextAppearance">@style/ef_TitleTheme</item>-->
+    </style>
+
+    <style name="ef_TitleTheme" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <!--Any text styling can be done here-->
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/averta_regular</item>
     </style>
 
 </resources>

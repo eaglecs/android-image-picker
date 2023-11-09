@@ -9,4 +9,6 @@
     android:elevation="@dimen/ef_toolbar_elevation"
     android:theme="@style/ef_CustomToolbarTheme"
     app:contentInsetStart="0dp"
-    tools:ignore="UnusedAttribute"/>
+    tools:ignore="UnusedAttribute">
+
+</androidx.appcompat.widget.Toolbar>

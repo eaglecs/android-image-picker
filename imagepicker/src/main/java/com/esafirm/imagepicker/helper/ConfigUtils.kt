@@ -38,6 +38,6 @@ object ConfigUtils {
 
     fun getDoneButtonText(context: Context, config: ImagePickerConfig): String {
         val doneButtonText = config.doneButtonText
-        return if (doneButtonText.isNullOrBlank()) context.getString(R.string.ef_done) else doneButtonText
+        return if (doneButtonText.isNullOrBlank()) "" else doneButtonText
     }
 }

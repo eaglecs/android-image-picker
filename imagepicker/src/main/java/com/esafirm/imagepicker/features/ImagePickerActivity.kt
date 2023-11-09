@@ -144,7 +144,10 @@ class ImagePickerActivity : AppCompatActivity(), ImagePickerInteractionListener 
 
     private fun setupView(config: ImagePickerConfig) {
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
+        toolbar.setTitleTextAppearance(this, R.style.ef_TitleTheme)
+        toolbar.setNavigationIcon(R.drawable.ic_back)
         setSupportActionBar(toolbar)
+        actionBar = supportActionBar
         actionBar = supportActionBar
         actionBar?.run {
             val arrowDrawable = ViewUtils.getArrowIcon(this@ImagePickerActivity)
@@ -153,7 +156,7 @@ class ImagePickerActivity : AppCompatActivity(), ImagePickerInteractionListener 
                 arrowDrawable.setColorFilter(arrowColor, PorterDuff.Mode.SRC_ATOP)
             }
             setDisplayHomeAsUpEnabled(true)
-            setHomeAsUpIndicator(arrowDrawable)
+//            setHomeAsUpIndicator(arrowDrawable)
             setDisplayShowTitleEnabled(true)
         }
     }

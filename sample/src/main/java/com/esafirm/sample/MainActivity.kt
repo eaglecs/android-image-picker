@@ -78,13 +78,14 @@ class MainActivity : AppCompatActivity() {
             isFolderMode = folderMode // set folder mode (false by default)
             isIncludeVideo = includeVideo // include video (false by default)
             isOnlyVideo = onlyVideo // include video (false by default)
-            arrowColor = Color.RED // set toolbar arrow up color
+            arrowColor = Color.WHITE // set toolbar arrow up color
             folderTitle = "Folder" // folder selection title
-            imageTitle = "Tap to select" // image selection title
-            doneButtonText = "DONE" // done button text
+            imageTitle = "Bấm để chọn ảnh" // image selection title
+//            doneButtonText = "DONE" // done button text
+            doneButtonText = "" // done button text
             showDoneButtonAlways = true // Show done button always or not
             limit = 10 // max images can be selected (99 by default)
-            isShowCamera = true // show camera or not (true by default)
+            isShowCamera = false // show camera or not (true by default)
             savePath = ImagePickerSavePath("Camera") // captured image directory name ("Camera" folder by default)
             savePath = ImagePickerSavePath(Environment.getExternalStorageDirectory().path, isRelative = false) // can be a full path
 
